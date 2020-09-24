@@ -20,7 +20,6 @@ const QuotesWithHooks = () => {
     fetch(`https://www.breakingbadapi.com/api/quotes/${counter}`)
       .then((response) => response.json())
       .then((resp) => {
-        console.log(resp);
         isMounted.current &&
           setState({
             loading: false,
